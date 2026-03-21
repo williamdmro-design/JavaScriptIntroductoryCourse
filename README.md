@@ -130,5 +130,5 @@ Si usas VS Code como IDE y te llama la atención tener las extensiones que has p
 * [¿Qué son las cookies?](https://www.cloudflare.com/es-es/learning/privacy/what-are-cookies/)
 * [Curso de CSS](https://www.youtube.com/watch?v=hrxjBqZWsb0).
 * [Curso de Git y GitHub](https://www.youtube.com/watch?v=niPExbK8lSw).
-
+* [Lógica condicional en JavaScript](https://www.freecodecamp.org/news/a-definitive-guide-to-conditional-logic-in-javascript-23fa234d2ca3/).
 

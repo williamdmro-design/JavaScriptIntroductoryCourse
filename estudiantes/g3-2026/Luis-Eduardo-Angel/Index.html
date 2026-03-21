@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda MVP | Experiencia Completa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+
+    <header class="navbar glass">
+      <div class="logo"><i class="bx bx-store"></i> NeoShop</div>
+      <nav class="nav-links">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#productos">Catálogo</a>
+        <button id="theme-toggle" class="icon-btn" title="Cambiar Tema">
+          <i class="bx bx-moon"></i>
+        </button>
+        <button id="cart-toggle" class="icon-btn" title="Ver Carrito">
+          <i class="bx bx-cart"></i>
+          <span id="cart-count">0</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero glass-hero">
+        <div class="hero-content">
+          <h1>El futuro del E-commerce en tus manos</h1>
+          <p>
+            Descubre una experiencia de compra minimalista, rápida y diseñada
+            para destacar lo que realmente importa: tu estilo de vida. Explora
+            nuestra nueva colección tecnológica.
+          </p>
+          <div class="hero-btns">
+            <a href="#productos" class="btn-primary">Ver Catálogo</a>
+            <a href="#nosotros" class="btn-secondary">Conocer Más</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <i class="bx bx-shopping-bag"></i>
+        </div>
+      </section>
+
+      <section id="nosotros" class="about-section">
+        <div class="about-text glass">
+          <h2>¿Qué hace único a nuestro emprendimiento?</h2>
+          <p>
+            Nacimos con la idea de simplificar la forma en que compras en línea.
+            Olvídate de páginas saturadas y lentas. Creemos en el diseño limpio,
+            la tecnología de punta y, sobre todo, en ofrecerte productos
+            cuidadosamente seleccionados.
+          </p>
+          <ul class="features-list">
+            <li><i class="bx bx-check-shield"></i> Compras 100% Seguras</li>
+            <li><i class="bx bx-rocket"></i> Envíos Express</li>
+            <li><i class="bx bx-support"></i> Soporte 24/7</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="productos" class="product-grid">
+        <article class="product-card glass">
+          <div class="img-placeholder"><i class="bx bx-headphone"></i></div>
+          <div class="product-info">
+            <h3>Auriculares X</h3>
+            <p class="price">$50.00</p>
+            <button
+              class="buy-btn"
+              data-id="1"
+              data-name="Auriculares X"
+              data-price="50"
+            >
+              <i class="bx bx-plus"></i> Añadir
+            </button>
+          </div>
+        </article>
+
+        <article class="product-card glass">
+          <div class="img-placeholder"><i class="bx bx-laptop"></i></div>
+          <div class="product-info">
+            <h3>Laptop Pro</h3>
+            <p class="price">$950.00</p>
+            <button
+              class="buy-btn"
+              data-id="2"
+              data-name="Laptop Pro"
+              data-price="950"
+            >
+              <i class="bx bx-plus"></i> Añadir
+            </button>
+          </div>
+        </article>
+
+        <article class="product-card glass">
+          <div class="img-placeholder"><i class="bx bx-watch"></i></div>
+          <div class="product-info">
+            <h3>Smartwatch V</h3>
+            <p class="price">$120.00</p>
+            <button
+              class="buy-btn"
+              data-id="3"
+              data-name="Smartwatch V"
+              data-price="120"
+            >
+              <i class="bx bx-plus"></i> Añadir
+            </button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <aside id="cart-sidebar" class="cart-sidebar glass">
+      <div class="cart-header">
+        <h2>Tu Carrito</h2>
+        <button id="close-cart" class="icon-btn">
+          <i class="bx bx-x"></i>
+        </button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="total">
+          <span>Total:</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+        <button class="checkout-btn">Pagar Ahora</button>
+      </div>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>

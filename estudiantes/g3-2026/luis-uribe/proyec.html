@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Liquidación Laboral Colombia 2025</title>
+    <link rel="stylesheet" href="proyect.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>🇨🇴 Liquidación Laboral 2025</h2>
+
+      <div class="form-group">
+        <label>Fecha de Inicio:</label>
+        <input type="date" id="startDate" />
+      </div>
+
+      <div class="form-group">
+        <label>Fecha de Retiro:</label>
+        <input type="date" id="endDate" />
+      </div>
+
+      <div class="form-group">
+        <label>Salario Básico Mensual (SMMLV 2025: $1.423.500):</label>
+        <input type="number" id="salary" value="1423500" min="0" />
+      </div>
+
+      <div class="form-group">
+        <label>Bonos y Horas Extra (Suma total):</label>
+        <input type="number" id="bonuses" value="0" min="0" />
+      </div>
+
+      <button onclick="calcularLiquidacion()">CALCULAR LIQUIDACIÓN</button>
+
+      <div id="results" class="results">
+        <h3>Desglose de Pagos</h3>
+        <table>
+          <tr>
+            <th>Concepto</th>
+            <th>Días / Valor</th>
+            <th>Total a Pagar</th>
+          </tr>
+          <tr>
+            <td>Días Trabajados</td>
+            <td id="daysWorked">-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Cesantías (1 mes/año)</td>
+            <td>Salario / 360 * Días</td>
+            <td id="valCesantias">$0</td>
+          </tr>
+          <tr>
+            <td>Intereses Cesantías (12%)</td>
+            <td>Cesantías * 12% * (Días/360)</td>
+            <td id="valIntereses">$0</td>
+          </tr>
+          <tr>
+            <td>Primas de Servicios (1 mes/año)</td>
+            <td>Salario / 360 * Días</td>
+            <td id="valPrimas">$0</td>
+          </tr>
+          <tr>
+            <td>Vacaciones (15 días/año)</td>
+            <td>Salario / 720 * Días</td>
+            <td id="valVacaciones">$0</td>
+          </tr>
+          <tr class="total-row">
+            <td>TOTAL PRESTACIONES</td>
+            <td></td>
+            <td id="valTotal">$0</td>
+          </tr>
+        </table>
+
+        <div class="note">
+          <strong>Nota:</strong> Este cálculo sigue el Código Sustantivo del
+          Trabajo (CST). El Auxilio de Transporte ($162.000) NO se incluye en la
+          base de cálculo para prestaciones sociales.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
